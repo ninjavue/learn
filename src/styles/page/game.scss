@@ -1,0 +1,104 @@
+.game {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('@/assets/images/kahoot-game.webp');
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 2000;
+    background-size: 100vw 100vh;
+
+    & h1 {
+        margin-top: 80px;
+        padding: 10px 20px;
+        background-color: rgb(254, 254, 254);
+        font-size: clamp(1rem, 5vmin, 2rem);
+        font-weight: 700;
+        line-height: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        border-radius: 0.25rem;
+        text-align: center;
+    }
+
+    & .row {
+        width: 70%;
+        margin-top: auto;
+    }
+
+}
+
+.game-answer-btn {
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -6px 0px 0px inset;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+    transition: box-shadow 0.2s ease 0s, background 0.2s ease 0s, opacity 0.2s ease 0s;
+    border-radius: 4px;
+    max-width: 100%;
+    min-height: 100px;
+    overflow-x: hidden;
+    background-color: rgb(226, 27, 60);
+    margin-bottom: 20px;
+    font-size: 28px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(rgb(226, 27, 60), 10%);
+    }
+
+    &.two {
+        background-color: rgb(19, 104, 206);
+        margin-left: 20px;
+
+        &:hover {
+            background-color: darken(rgb(19, 104, 206), 10%);
+        }
+    }
+
+    &.three {
+        background-color: rgb(216, 158, 0);
+
+        &:hover {
+            background-color: darken(rgb(216, 158, 0), 10%);
+        }
+    }
+
+    &.vier {
+        background-color: rgb(38, 137, 12);
+        margin-left: 20px;
+
+        &:hover {
+            background-color: darken(rgb(38, 137, 12), 10%);
+        }
+    }
+}
+
+
+@media(max-width: 600px) {
+    .game-answer-btn {
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+
+    .game {
+        & .row {
+            width: 80%;
+        }
+    }
+}

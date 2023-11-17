@@ -8,9 +8,19 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.2",
+    "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13",
+    "vue": "^3.3.4",
+    "vue-chat-emoji": "^1.1.27",
+    "vue-cookies": "^1.8.3",
+    "vue-emoji-mart": "^1.0.5",
+    "vue-emoji-picker": "^1.0.3",
+    "vue-qrcode": "^2.2.0",
+    "vue-rewards": "^1.0.1",
     "vue-router": "^4.0.3",
+    "vue-the-mask": "^0.11.1",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
